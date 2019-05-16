@@ -1,7 +1,53 @@
 body {
-  font-family: Helvetica;
+  color: white;
+  background-color: black;
 }
+
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  padding: 0 8%;
+ 
+  .cities {
+    width: 30%;
+    // .city{
+    //   border: 0.5px solid;
+    //   height: auto;
+    //   padding: 10px;
+    //   font-size: 20px;
+    //   font-weight: 400;
+    //   cursor: pointer;
+      
+    // }
+  }
+  .active-city {
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    // height: auto !important;
+  
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .active{
+    background-color: blue;
+  }
+  .default-active-city{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+  }
+}
+
+.list-group-item {
+  background-color: transparent;
+  cursor: pointer;
 }
